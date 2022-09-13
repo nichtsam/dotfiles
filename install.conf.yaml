@@ -1,15 +1,14 @@
 - defaults:
     link:
+      create: true
       relink: true
 
 - clean: ["~"]
 
 - link:
-    ~/.gitconfig: gitconfig
-    ~/.zshrc: zshrc
-    ~/.ssh/config:
-      path: ssh/config
-      create: true
+    ~/.gitconfig: 
+    ~/.zshrc: 
+    ~/.ssh/config: ssh/config
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
