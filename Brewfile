@@ -1,0 +1,8 @@
+tap "homebrew/bundle"
+tap "homebrew/core"
+brew "tree"
+brew "wget"
+brew "git"
+brew "zsh"
+brew "fnm"
+brew "neovim"
