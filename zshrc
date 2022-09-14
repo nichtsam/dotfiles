@@ -112,3 +112,5 @@ source $ZSH/oh-my-zsh.sh
 
 # homebrew packages comes first
 export PATH="$PATH:/opt/homebrew/bin/" export PATH="/opt/homebrew/bin:$PATH"
+
+eval "$(fnm env --use-on-cd)"

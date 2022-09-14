@@ -1,0 +1,5 @@
+require("nichtsam.options")
+require("nichtsam.keymaps")
+require("nichtsam.packer")
+require("nichtsam.cmp")
+require("nichtsam.mason")

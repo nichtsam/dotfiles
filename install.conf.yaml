@@ -7,8 +7,14 @@
 
 - link:
     ~/.gitconfig: 
+    ~/.zshenv:
     ~/.zshrc: 
     ~/.ssh/config: ssh/config
+    ~/.config/nvim: 
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+
+    - command: ./setup_homebrew.zsh
+      stdout: true
+      stderr: true
