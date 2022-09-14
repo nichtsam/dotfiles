@@ -1,3 +1,6 @@
 [user]
 	name = Samuel Jensen
 	email = 44519206+nichtsam@users.noreply.github.com
+
+[include]
+        path = ~/.gitconfig_local
