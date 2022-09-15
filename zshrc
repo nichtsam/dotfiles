@@ -114,3 +114,5 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:/opt/homebrew/bin/" export PATH="/opt/homebrew/bin:$PATH"
 
 eval "$(fnm env --use-on-cd)"
+
+export LANG=en_US.UTF-8
