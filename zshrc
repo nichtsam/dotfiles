@@ -107,8 +107,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias exa="exa -Faals Name --git"
-alias ls="exa -Faals Name --git"
+alias exa='exa -Faals Name --git'
+alias ls='exa -Faals Name --git'
+alias trail='cat -n <<<${(F)path}'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
