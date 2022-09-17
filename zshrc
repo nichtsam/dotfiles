@@ -114,8 +114,11 @@ alias trail='cat -n <<<${(F)path}'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# homebrew packages comes first
-export PATH="$PATH:/opt/homebrew/bin/" export PATH="/opt/homebrew/bin:$PATH"
+typeset -U path
+path=(
+  "/opt/homebrew/bin"
+  $path
+)
 
 eval "$(fnm env --use-on-cd)"
 
