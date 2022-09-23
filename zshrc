@@ -17,3 +17,5 @@ path=(
 
 eval "$(fnm env --use-on-cd)"
 
+# Setup Starship
+eval "$(starship init zsh)"
