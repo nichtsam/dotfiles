@@ -1,0 +1,19 @@
+# disable blank line between shell prompts
+add_newline = false 
+
+# show time and previous command's duration at the right side of the prompt
+right_format = "$cmd_duration $time"
+
+[line_break]
+disabled = true
+
+[time]
+disabled = false
+format = "[$time]($style)"
+
+[username]
+format = "[$user]($style) "
+
+[cmd_duration]
+style = "bold red"
+format = "[took $duration]($style) "
