@@ -1,5 +1,8 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
 # disable blank line between shell prompts
-add_newline = false 
+add_newline = false
 
 # show time and previous command's duration at the right side of the prompt
 right_format = "$cmd_duration $time"
