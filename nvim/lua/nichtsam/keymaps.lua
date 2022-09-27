@@ -18,10 +18,10 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<C-h>", "<C-W>h", opts)
+keymap("n", "<C-j>", "<C-W>j", opts)
+keymap("n", "<C-k>", "<C-W>k", opts)
+keymap("n", "<C-l>", "<C-W>l", opts)
 
 keymap("n", "<leader>e", ":E<cr>", opts)
 
