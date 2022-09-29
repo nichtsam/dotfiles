@@ -12,5 +12,10 @@ require("mason-lspconfig").setup_handlers({
   ["sumneko_lua"] = function()
     require("lspconfig").sumneko_lua.setup(vim.tbl_deep_extend("force", opts,
       require("nichtsam.mason.lsp.settings.sumneko_lua")))
-  end
+  end,
+  -- json specific register
+  ["jsonls"] = function()
+    require("lspconfig").jsonls.setup(vim.tbl_deep_extend("force", opts,
+      require("nichtsam.mason.lsp.settings.jsonls")))
+  end,
 })
