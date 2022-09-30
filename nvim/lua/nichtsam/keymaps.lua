@@ -23,7 +23,7 @@ keymap("n", "<C-j>", "<C-W>j", opts)
 keymap("n", "<C-k>", "<C-W>k", opts)
 keymap("n", "<C-l>", "<C-W>l", opts)
 
-keymap("n", "<leader>e", ":E<cr>", opts)
+keymap("n", "<leader>e", ":Explore<cr>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
