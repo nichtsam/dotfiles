@@ -1,2 +1,3 @@
-require("nichtsam.mason.mason")
+require("nichtsam.mason.null-ls")
 require("nichtsam.mason.lsp")
+require("nichtsam.mason.mason")

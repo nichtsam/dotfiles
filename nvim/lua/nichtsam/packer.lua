@@ -42,7 +42,7 @@ packer.init {
 return packer.startup(function(use)
   -- My plugins here
   use "wbthomason/packer.nvim" -- Have packer manage itself
-  
+
   -- Theme
   use 'folke/tokyonight.nvim' -- Tokyo Night theme for neovim
 
@@ -65,7 +65,8 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- Configurations for Nvim LSP
   use "williamboman/mason.nvim" -- Easily install and manage LSP servers, DAP servers, linters, and formatters.
   use "williamboman/mason-lspconfig.nvim" -- Makes it easier to use lspconfig with mason.nvim
-  
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+
   -- Misc
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
@@ -73,6 +74,6 @@ return packer.startup(function(use)
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
-      require("packer").sync()
+    require("packer").sync()
   end
 end)
