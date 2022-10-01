@@ -2,19 +2,18 @@ local function lsp_highlight_document(client)
 	-- Set autocommands conditional on server_capabilities
 	if client.resolved_capabilities.document_highlight then
 		vim.api.nvim_exec(
-			[[
-      augroup lsp_document_highlight
-        autocmd! * <buffer>
+			[[ 
+        augroup lsp_document_highlight autocmd! * <buffer>
         autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
         autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
-      augroup END
-    ]],
+        augroup END
+      ]],
 			false
 		)
 	end
 end
 
-local function lsp_format_on_save(client, bufnr)
+local function lsp_format_on_save(bufnr)
 	vim.api.nvim_create_autocmd("BufWritePre", {
 		group = vim.api.nvim_create_augroup("lsp_format_on_save", { clear = true }),
 		buffer = bufnr,
@@ -64,7 +63,7 @@ local function on_attach(client, bufnr)
 
 	lsp_keymaps(bufnr)
 	lsp_highlight_document(client)
-	lsp_format_on_save(client, bufnr)
+	lsp_format_on_save(bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
