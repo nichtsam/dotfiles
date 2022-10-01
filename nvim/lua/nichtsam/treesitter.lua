@@ -36,6 +36,7 @@ require("nvim-treesitter.configs").setup({
 		-- Instead of true it can also be a list of languages
 		additional_vim_regex_highlighting = false,
 	},
+
 	incremental_selection = {
 		enable = true,
 		keymaps = {
@@ -44,5 +45,10 @@ require("nvim-treesitter.configs").setup({
 			node_decremental = "<BS>",
 			scope_incremental = "<TAB>",
 		},
+	},
+
+	context_commentstring = {
+		enable = true,
+		enable_autocmd = false,
 	},
 })
