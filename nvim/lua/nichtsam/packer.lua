@@ -50,6 +50,7 @@ return packer.startup(function(use)
 
 	-- Integrations
 	use("wakatime/vim-wakatime") -- WakaTime Integration
+	use("lewis6991/gitsigns.nvim") -- Git integration
 
 	-- Completion Plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
