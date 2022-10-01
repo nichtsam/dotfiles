@@ -1,6 +1,6 @@
 local function lsp_highlight_document(client)
 	-- Set autocommands conditional on server_capabilities
-	if client.resolved_capabilities.document_highlight then
+	if client.server_capabilities.documentHighlight then
 		vim.api.nvim_exec(
 			[[ 
         augroup lsp_document_highlight autocmd! * <buffer>
@@ -18,7 +18,7 @@ local function lsp_format_on_save(bufnr)
 		group = vim.api.nvim_create_augroup("lsp_format_on_save", { clear = true }),
 		buffer = bufnr,
 		callback = function()
-			vim.lsp.buf.formatting_sync()
+			vim.lsp.buf.format({ sync = true })
 		end,
 	})
 end
@@ -45,7 +45,7 @@ local function lsp_keymaps(bufnr)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "]d", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', opts)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 
-	vim.api.nvim_command([[ command! Format execute 'lua vim.lsp.buf.formatting()' ]])
+	vim.api.nvim_command([[ command! Format execute 'lua vim.lsp.buf.format({ sync = true })' ]])
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "<A-f>", ":Format<CR>", opts)
 end
 
@@ -57,7 +57,7 @@ local function on_attach(client, bufnr)
 	}
 	for _, name in ipairs(disable_formatting) do
 		if client.name == name then
-			client.resolved_capabilities.document_formatting = false
+			client.server_capabilities.documentFormattingProvider = false
 		end
 	end
 
