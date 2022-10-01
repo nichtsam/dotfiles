@@ -77,6 +77,7 @@ alias gpsup='git push --set-upstream origin $(git_current_branch)'
 # Pull
 alias gup='git pull --rebase'
 alias gupv='git pull --rebase -v'
+alias gfa='git fetch --all --prune'
 
 # Status
 alias gsb='git status -sb'
