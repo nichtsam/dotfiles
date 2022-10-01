@@ -23,8 +23,6 @@ keymap("n", "<C-j>", "<C-W>j", opts)
 keymap("n", "<C-k>", "<C-W>k", opts)
 keymap("n", "<C-l>", "<C-W>l", opts)
 
-keymap("n", "<leader>e", ":Explore<cr>", opts)
-
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
@@ -49,3 +47,6 @@ keymap(
 	"<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
 	opts
 )
+
+-- Nvimtree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
