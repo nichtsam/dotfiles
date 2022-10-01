@@ -14,6 +14,16 @@ local function lsp_highlight_document(client)
 	end
 end
 
+local function lsp_format_on_save(client, bufnr)
+	vim.api.nvim_create_autocmd("BufWritePre", {
+		group = vim.api.nvim_create_augroup("lsp_format_on_save", { clear = true }),
+		buffer = bufnr,
+		callback = function()
+			vim.lsp.buf.formatting_sync()
+		end,
+	})
+end
+
 local function lsp_keymaps(bufnr)
 	local opts = { noremap = true, silent = true }
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
@@ -37,7 +47,6 @@ local function lsp_keymaps(bufnr)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 
 	vim.api.nvim_command([[ command! Format execute 'lua vim.lsp.buf.formatting()' ]])
-	vim.api.nvim_command([[ autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync() ]])
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>f", ":Format<CR>", opts)
 end
 
@@ -54,6 +63,7 @@ local function on_attach(client, bufnr)
 
 	lsp_keymaps(bufnr)
 	lsp_highlight_document(client)
+	lsp_format_on_save(client, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
