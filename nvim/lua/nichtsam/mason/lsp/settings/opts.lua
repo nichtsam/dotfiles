@@ -54,6 +54,7 @@ local function on_attach(client, bufnr)
 	local disable_formatting = {
 		"tsserver", -- use eslint and prettier
 		"sumneko_lua", -- use stylua
+		"jsonls", -- use prettier
 	}
 	for _, name in ipairs(disable_formatting) do
 		if client.name == name then
