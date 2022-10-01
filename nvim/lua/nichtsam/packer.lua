@@ -69,6 +69,9 @@ return packer.startup(function(use)
 	use("williamboman/mason-lspconfig.nvim") -- Makes it easier to use lspconfig with mason.nvim
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 
+	-- Telescope
+	use({ "nvim-telescope/telescope.nvim", tag = "0.1.0" })
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
