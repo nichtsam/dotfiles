@@ -52,6 +52,13 @@ return packer.startup(function(use)
 		requires = { "kyazdani42/nvim-web-devicons" }, -- optional, for file icons
 	})
 
+	-- Bufferline
+	use({
+		"akinsho/bufferline.nvim", -- A snazzy buffer line (with tabpage integration) for Neovim
+		requires = { "kyazdani42/nvim-web-devicons" }, -- Recommended (for coloured icons)
+	})
+	use("moll/vim-bbye") -- Delete buffers and close files in Vim without closing your windows or messing up your layout.
+
 	-- Theme
 	use("folke/tokyonight.nvim") -- Tokyo Night theme for neovim
 
