@@ -21,3 +21,6 @@ eval "$(fnm env --use-on-cd)"
 
 # Setup Starship
 eval "$(starship init zsh)"
+
+# Plugins
+source "$DOTFILES/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
