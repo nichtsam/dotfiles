@@ -84,6 +84,9 @@ return packer.startup(function(use)
 	use("williamboman/mason-lspconfig.nvim") -- Makes it easier to use lspconfig with mason.nvim
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 
+	-- Terminal
+	use("akinsho/toggleterm.nvim") -- A Better Terminal
+
 	-- Telescope
 	use({ "nvim-telescope/telescope.nvim", tag = "0.1.0" })
 
