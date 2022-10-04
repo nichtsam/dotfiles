@@ -5,12 +5,20 @@ end
 
 bufferline.setup({
 	options = {
-		numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
+		diagnostics = "nvim_lsp",
 		indicator = {
-			icon = "▎", -- this should be omitted if indicator style is not 'icon'
 			style = "icon",
+			icon = "▎",
 		},
-		offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
+		offsets = {
+			{
+				filetype = "NvimTree",
+				text = "File Explorer",
+				text_align = "left",
+				highlight = "WildMenu",
+				padding = 1,
+			},
+		},
 		buffer_close_icon = "",
 		close_icon = "",
 	},
