@@ -22,4 +22,20 @@ bufferline.setup({
 		buffer_close_icon = "",
 		close_icon = "",
 	},
+	highlights = {
+		fill = {
+			fg = { attribute = "fg", highlight = "ff0000" },
+			bg = { attribute = "bg", highlight = "@none" },
+		},
+
+		background = {
+			fg = { attribute = "fg", highlight = "TabLine" },
+			bg = { attribute = "bg", highlight = "@none" },
+		},
+
+		separator = {
+			fg = { attribute = "bg", highlight = "TabLine" },
+			bg = { attribute = "bg", highlight = "@none" },
+		},
+	},
 })
