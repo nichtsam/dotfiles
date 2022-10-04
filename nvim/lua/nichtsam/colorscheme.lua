@@ -5,19 +5,19 @@ local colorscheme = "tokyonight"
 local tokyonight_ok, tokyonight = pcall(require, "tokyonight")
 
 if not tokyonight_ok then
-  vim.notify("tokyonight not found!")
-  return
+	vim.notify("tokyonight not found!")
+	return
 end
 
 tokyonight.setup({
-  transparent = true,
+	transparent = true,
 })
 
 -- setup colorscheme
 local colorscheme_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not colorscheme_ok then
-  vim.notify("colorscheme " .. tokyonight .. " not found!")
-  return
+	vim.notify("colorscheme " .. tokyonight .. " not found!")
+	return
 end
 
 -- Autocommand that sets up neovim coloerscheme

@@ -1,3 +1,4 @@
+require("nichtsam.colorscheme")
 require("nichtsam.options")
 require("nichtsam.keymaps")
 require("nichtsam.packer")
