@@ -52,6 +52,7 @@ alias gbda='git branch --no-color --merged | command grep -vE "^([+*]|\s*($(git_
 alias gbD='git branch -D'
 alias gcb='git checkout -b'
 alias gcm='git checkout $(git_main_branch)'
+alias gcd='git checkout $(git_develop_branch)'
 alias gco='git checkout'
 
 # Merge
