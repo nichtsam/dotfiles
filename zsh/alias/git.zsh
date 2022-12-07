@@ -61,10 +61,11 @@ alias gma='git merge --abort'
 
 # Rebase
 alias grb='git rebase'
+alias grbm='git rebase $(git_main_branch)'
+alias grbd='git rebase $(git_develop_branch)'
 alias grba='git rebase --abort'
 alias grbc='git rebase --continue'
 alias grbi='git rebase -i'
-alias grbm='git rebase $(git_main_branch)'
 alias grbs='git rebase --skip'
 
 # Push
