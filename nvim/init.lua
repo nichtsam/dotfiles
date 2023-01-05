@@ -12,3 +12,11 @@ require("nichtsam.gitsigns")
 require("nichtsam.nvim-tree")
 require("nichtsam.bufferline")
 require("nichtsam.toggleterm")
+
+-- In Organized Future it should look like:
+-- require("nichtsam.fundamentals")
+-- require("nichtsam.packer")
+-- require("nichtsam.explore")
+-- require("nichtsam.language")
+-- require("nichtsam.editing")
+-- require("nichtsam.integration")

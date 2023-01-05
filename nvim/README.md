@@ -20,5 +20,9 @@
   - Commenting
   - Autopairs
   - Completions
+    - Lsp Source
+    - Snippet Source
+    - Vim builtin Source
+    - Filesystem Source
 - Integration
   - Git
