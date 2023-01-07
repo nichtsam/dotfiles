@@ -3,7 +3,7 @@
   - keymaps
   - colorscheme
 - Plugins manager: Packer.nvim
-- Language related utils
+- Code Intelligence related utils
   - Project Wide: Mason.nvim
     - lsp
     - dap
