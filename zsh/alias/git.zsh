@@ -80,6 +80,7 @@ alias gpsup='git push --set-upstream origin $(git_current_branch)'
 alias gup='git pull --rebase'
 alias gupv='git pull --rebase -v'
 alias gfa='git fetch --all --prune'
+alias gsubu='git submodule update --init --recursive --remote'
 
 # Status
 alias gsb='git status -sb'
