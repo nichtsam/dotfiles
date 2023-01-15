@@ -6,12 +6,13 @@
 - clean: ["~"]
 
 - link:
-    ~/.gitconfig: 
+    ~/.gitconfig:
     ~/.zshenv:
-    ~/.zshrc: 
+    ~/.zshrc:
+    ~/.npmrc:
     ~/.ssh/config: ssh/config
-    ~/.config/nvim: 
-    ~/.config/starship.toml: 
+    ~/.config/nvim:
+    ~/.config/starship.toml:
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
