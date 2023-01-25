@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+tap "homebrew/cask"
 tap "homebrew/core"
 # Modern replacement for 'ls'
 brew "exa"
@@ -20,3 +21,5 @@ brew "tree"
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Automatic tiling window manager similar to xmonad
+cask "amethyst"

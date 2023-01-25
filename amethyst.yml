@@ -1,0 +1,7 @@
+mouse-follows-focus: true
+
+window-margins: true
+window-margin-size: 15
+
+floating:
+  - com.apple.systempreferences
