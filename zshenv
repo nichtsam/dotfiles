@@ -1,5 +1,3 @@
-. "$HOME/.cargo/env"
-
 function exists() {
   # `command -v` is similar to `which`
   # https://stackoverflow.com/a/677212/1341838
