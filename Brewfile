@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "wez/wezterm"
 # Modern replacement for 'ls'
 brew "exa"
 # Simple, fast and user-friendly alternative to find
@@ -23,3 +24,5 @@ brew "wget"
 brew "zsh"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"

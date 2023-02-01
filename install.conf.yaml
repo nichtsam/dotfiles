@@ -13,6 +13,7 @@
     ~/.ssh/config: ssh/config
     ~/.config/nvim:
     ~/.config/starship.toml:
+    ~/.config/wezterm/wezterm.lua:
     ~/.amethyst.yml:
 
 - shell:
