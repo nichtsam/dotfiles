@@ -13,6 +13,7 @@ source "$DOTFILES/zsh/alias/git.zsh"
 # Handle PATH
 typeset -U path
 path=(
+  "$HOME/.cargo/bin"
   "/opt/homebrew/bin"
   $path
 )
