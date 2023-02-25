@@ -24,5 +24,7 @@ brew "wget"
 brew "zsh"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
+# Neovim Client
+cask "neovide"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
