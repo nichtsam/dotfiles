@@ -5,3 +5,6 @@ window-margin-size: 15
 
 floating:
   - com.apple.systempreferences
+
+layouts:
+  - fullscreen
