@@ -86,6 +86,8 @@ local plugins = {
       require("custom.configs.nvim-lint")
     end,
   },
+
+  { 'wakatime/vim-wakatime', lazy = false }
 }
 
 return plugins
