@@ -10,6 +10,8 @@ brew "fd"
 brew "fnm"
 # Distributed revision control system
 brew "git"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Command-line benchmarking tool
 brew "hyperfine"
 # Lightweight and flexible command-line JSON processor
@@ -30,7 +32,7 @@ brew "wget"
 brew "zsh"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
-# App to build and share containerized applications and microservices
+# App to build and share containerised applications and microservices
 cask "docker"
 # Neovim Client
 cask "neovide"

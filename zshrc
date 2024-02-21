@@ -17,6 +17,11 @@ path=(
   "/opt/homebrew/bin"
   $path
 )
+## PATH setting that uses homebrew-installed packages
+path=(
+  "$(go env GOPATH)/bin"
+  $path
+)
 
 eval "$(fnm env --use-on-cd)"
 
