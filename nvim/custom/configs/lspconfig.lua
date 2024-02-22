@@ -14,6 +14,7 @@ local servers = {
   "taplo",
   -- Go
   "gopls",
+  "templ"
 }
 
 for _, lsp in ipairs(servers) do

@@ -6,3 +6,5 @@ autocmd("LspAttach", {
     client.server_capabilities.semanticTokensProvider = nil
   end,
 })
+
+vim.filetype.add({ extension = { templ = "templ" } })

@@ -27,6 +27,10 @@ local options = {
       "goimports-reviser",
       "golines",
     },
+
+    templ = {
+      "templ"
+    }
   },
 
   format_on_save = function(bufnr)

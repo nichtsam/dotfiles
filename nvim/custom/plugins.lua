@@ -21,6 +21,7 @@ local plugins = {
 
         -- go
         "go",
+        "templ"
       },
     },
   },
@@ -48,6 +49,7 @@ local plugins = {
         -- Go
         -- lsp
         "gopls",
+        "templ",
         -- formatter
         "gofumpt",
         "goimports-reviser",
