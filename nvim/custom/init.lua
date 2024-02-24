@@ -1,5 +1,7 @@
+local opt = vim.opt
 local autocmd = vim.api.nvim_create_autocmd
 
+-------------------------------------- autocmd ------------------------------------------
 autocmd("LspAttach", {
   callback = function(args)
     local client = vim.lsp.get_client_by_id(args.data.client_id)
@@ -7,4 +9,9 @@ autocmd("LspAttach", {
   end,
 })
 
+-------------------------------------- filetype -----------------------------------------
 vim.filetype.add({ extension = { templ = "templ" } })
+
+
+-------------------------------------- options ------------------------------------------
+opt.relativenumber = true
