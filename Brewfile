@@ -32,9 +32,9 @@ brew "wget"
 brew "zsh"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
-# App to build and share containerised applications and microservices
-cask "docker"
 # Neovim Client
 cask "neovide"
+# Replacement for Docker Desktop
+cask "orbstack"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
