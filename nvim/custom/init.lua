@@ -10,7 +10,12 @@ autocmd("LspAttach", {
 })
 
 -------------------------------------- filetype -----------------------------------------
-vim.filetype.add({ extension = { templ = "templ" } })
+vim.filetype.add({
+  extension = {
+    templ = "templ",
+    mdx = 'markdown.mdx'
+  }
+})
 
 
 -------------------------------------- options ------------------------------------------
