@@ -14,9 +14,11 @@ vim.filetype.add({
   extension = {
     templ = "templ",
     mdx = 'markdown.mdx'
+  },
+  pattern = {
+    ["%.env%..+"] = "sh",
   }
 })
-
 
 -------------------------------------- options ------------------------------------------
 opt.relativenumber = true
