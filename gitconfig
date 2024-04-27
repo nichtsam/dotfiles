@@ -3,6 +3,8 @@
 	email = 44519206+nichtsam@users.noreply.github.com
 [core]
   editor = "nvim"
+[init]
+	defaultBranch = main
 
 [include]
         path = ~/.gitconfig_local
