@@ -11,6 +11,7 @@ local plugins = {
       ensure_installed = {
         -- defaults
         "vim",
+        "vimdoc",
         "lua",
 
         -- web dev
