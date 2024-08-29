@@ -22,3 +22,5 @@ vim.filetype.add({
 
 -------------------------------------- options ------------------------------------------
 opt.relativenumber = true
+opt.wrap = false
+opt.sidescroll = 15
