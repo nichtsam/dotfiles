@@ -1,9 +1,6 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "wez/wezterm"
-# Modern replacement for 'ls'
-brew "exa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Fast and simple Node.js version manager
@@ -18,6 +15,8 @@ brew "hyperfine"
 brew "jq"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -26,8 +25,6 @@ brew "neovim"
 brew "ripgrep"
 # Cross-shell prompt for astronauts
 brew "starship"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
 # Internet file retriever
 brew "wget"
 # UNIX shell (command interpreter)

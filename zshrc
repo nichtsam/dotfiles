@@ -4,8 +4,8 @@ export DOTFILES="$HOME/.dotfiles"
 export HOMEBREW_BUNDLE_FILE="$DOTFILES/Brewfile"
 
 # Alias
-alias exa='exa -Faals Name --git'
-alias ls='exa -Faals Name --git'
+alias ls='lsd -lg'
+alias tree='lsd --tree'
 alias trail='cat -n <<<${(F)path}'
 alias bbd='brew bundle dump --force --describe'
 source "$DOTFILES/zsh/alias/git.zsh"
