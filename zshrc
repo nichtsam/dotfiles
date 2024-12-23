@@ -15,6 +15,7 @@ typeset -U path
 path=(
   "$HOME/.cargo/bin"
   "/opt/homebrew/bin"
+  "/opt/homebrew/sbin"
   $path
 )
 ## PATH setting that uses homebrew-installed packages

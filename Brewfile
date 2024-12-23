@@ -17,8 +17,6 @@ brew "jq"
 brew "lazygit"
 # Clone of ls with colorful output, file type icons, and more
 brew "lsd"
-# Fast, highly customisable system info script
-brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Search tool like grep and The Silver Searcher
