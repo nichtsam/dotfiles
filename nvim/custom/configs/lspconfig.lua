@@ -20,7 +20,7 @@ local servers = {
       },
     }
   },
-  "tsserver",
+  "ts_ls",
   -- Rust
   "rust_analyzer",
   "taplo",
