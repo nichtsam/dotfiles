@@ -69,6 +69,8 @@ local plugins = {
         "golangci-lint",
 
         -- Lua
+        -- lsp
+        "lua",
         -- formatter
         "stylua",
       },
@@ -78,8 +80,8 @@ local plugins = {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require("plugins.configs.lspconfig")
-      require("custom.configs.lspconfig")
+      require("nvchad.configs.lspconfig")
+      require("configs.lspconfig")
     end,
   },
 
@@ -88,7 +90,7 @@ local plugins = {
     --  for users those who want auto-save conform + lazyloading!
     event = "BufWritePre",
     config = function()
-      require("custom.configs.conform")
+      require("configs.conform")
     end,
   },
 
@@ -96,7 +98,7 @@ local plugins = {
     "mfussenegger/nvim-lint",
     event = "BufWritePost",
     config = function()
-      require("custom.configs.nvim-lint")
+      require("configs.nvim-lint")
     end,
   },
 

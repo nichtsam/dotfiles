@@ -29,8 +29,10 @@ local options = {
     },
 
     templ = {
-      "templ"
-    }
+      "templ",
+    },
+
+    lua = { "stylua" },
   },
 
   format_on_save = function(bufnr)

@@ -11,8 +11,7 @@
     ~/.zshrc:
     ~/.npmrc:
     ~/.ssh/config: ssh/config
-    ~/.config/nvim: nvim/nvChad
-    ~/.config/nvim/lua/custom: nvim/custom
+    ~/.config/nvim:
     ~/.config/starship.toml:
     ~/.config/wezterm/wezterm.lua:
     ~/.amethyst.yml:

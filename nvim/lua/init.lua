@@ -1,4 +1,3 @@
-local opt = vim.opt
 local autocmd = vim.api.nvim_create_autocmd
 
 -------------------------------------- autocmd ------------------------------------------
@@ -10,17 +9,12 @@ autocmd("LspAttach", {
 })
 
 -------------------------------------- filetype -----------------------------------------
-vim.filetype.add({
+vim.filetype.add {
   extension = {
     templ = "templ",
-    mdx = 'markdown.mdx'
+    mdx = "markdown.mdx",
   },
   pattern = {
     ["%.env%..+"] = "sh",
-  }
-})
-
--------------------------------------- options ------------------------------------------
-opt.relativenumber = true
-opt.wrap = false
-opt.sidescroll = 15
+  },
+}

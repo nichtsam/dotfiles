@@ -5,6 +5,3 @@
 [submodule "zsh/zsh-autosuggestions"]
 	path = zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "nvim/nvChad"]
-	path = nvim/nvChad
-	url = https://github.com/NvChad/NvChad
