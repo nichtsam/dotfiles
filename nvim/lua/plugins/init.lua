@@ -4,7 +4,7 @@ local plugins = {
     lazy = false,
     config = function(_, opts)
       dofile(vim.g.base46_cache .. "syntax")
-      vim.treesitter.language.register('markdown', 'markdown.mdx')
+      vim.treesitter.language.register("markdown", "markdown.mdx")
       require("nvim-treesitter.configs").setup(opts)
     end,
     opts = {
@@ -32,7 +32,7 @@ local plugins = {
 
         -- markdown
         "markdown",
-        "markdown_inline"
+        "markdown_inline",
       },
     },
   },
@@ -80,8 +80,8 @@ local plugins = {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require("nvchad.configs.lspconfig")
-      require("configs.lspconfig")
+      require "nvchad.configs.lspconfig"
+      require "configs.lspconfig"
     end,
   },
 
@@ -90,7 +90,7 @@ local plugins = {
     --  for users those who want auto-save conform + lazyloading!
     event = "BufWritePre",
     config = function()
-      require("configs.conform")
+      require "configs.conform"
     end,
   },
 
@@ -98,11 +98,17 @@ local plugins = {
     "mfussenegger/nvim-lint",
     event = "BufWritePost",
     config = function()
-      require("configs.nvim-lint")
+      require "configs.nvim-lint"
     end,
   },
 
-  { 'wakatime/vim-wakatime', lazy = false }
+  { "wakatime/vim-wakatime", lazy = false },
+
+  {
+    "folke/ts-comments.nvim",
+    opts = {},
+    event = "VeryLazy",
+  },
 }
 
 return plugins
