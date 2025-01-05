@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
+tap "leoafarias/fvm"
 tap "wez/wezterm"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
@@ -27,6 +28,8 @@ brew "starship"
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Simple cli to manage Flutter SDK versions per project
+brew "leoafarias/fvm/fvm"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
 # Replacement for Docker Desktop

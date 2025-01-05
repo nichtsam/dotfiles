@@ -27,6 +27,10 @@ local servers = {
   templ = {},
   -- Lua
   lua_ls = {},
+  -- Dart
+  dartls = {
+    cmd = { "fvm", "dart", "language-server", "--protocol=lsp" },
+  },
 }
 
 for name, opts in pairs(servers) do
