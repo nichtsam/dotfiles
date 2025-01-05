@@ -29,8 +29,6 @@ brew "wget"
 brew "zsh"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
-# Neovim Client
-cask "neovide"
 # Replacement for Docker Desktop
 cask "orbstack"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
