@@ -1,11 +1,9 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# disable blank line between shell prompts
-add_newline = false
-
-# show time and previous command's duration at the right side of the prompt
 right_format = "$cmd_duration $time"
+add_newline = false
+continuation_prompt = '[∙](bright-gray) '
 
 [line_break]
 disabled = true
@@ -15,8 +13,13 @@ disabled = false
 format = "[$time]($style)"
 
 [username]
-format = "[$user]($style) "
+format = "[$user]($style)"
 
 [cmd_duration]
 style = "bold red"
 format = "[took $duration]($style) "
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+error_symbol = '[➜](bold red)'     # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
