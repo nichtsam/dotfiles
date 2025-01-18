@@ -1,23 +1,29 @@
 local options = {
   lsp_fallback = true,
 
+  formatters = {
+    biome = {
+      require_cwd = true,
+    },
+  },
+
   formatters_by_ft = {
 
-    javascript = { "prettier" },
-    javascriptreact = { "prettier" },
-    typescript = { "prettier" },
-    typescriptreact = { "prettier" },
+    javascript = { "prettier", "biome", stop_after_first = true },
+    javascriptreact = { "prettier", "biome", stop_after_first = true },
+    typescript = { "prettier", "biome", stop_after_first = true },
+    typescriptreact = { "prettier", "biome", stop_after_first = true },
     vue = { "prettier" },
-    css = { "prettier" },
+    css = { "prettier", "biome", stop_after_first = true },
     scss = { "prettier" },
     less = { "prettier" },
     html = { "prettier" },
-    json = { "prettier" },
-    jsonc = { "prettier" },
+    json = { "prettier", "biome", stop_after_first = true },
+    jsonc = { "prettier", "biome", stop_after_first = true },
     yaml = { "prettier" },
     markdown = { "prettier" },
     ["markdown.mdx"] = { "prettier" },
-    graphql = { "prettier" },
+    graphql = { "prettier", "biome", stop_after_first = true },
     handlebars = { "prettier" },
 
     rust = { "rustfmt" },

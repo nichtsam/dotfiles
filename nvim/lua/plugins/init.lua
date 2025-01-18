@@ -51,6 +51,7 @@ local plugins = {
         "prettier",
         -- linter
         "eslint-lsp",
+        "biome",
 
         -- Rust
         -- lsp
