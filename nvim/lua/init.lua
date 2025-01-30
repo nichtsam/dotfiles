@@ -12,7 +12,6 @@ autocmd("LspAttach", {
 vim.filetype.add {
   extension = {
     templ = "templ",
-    mdx = "markdown.mdx",
   },
   pattern = {
     ["%.env%..+"] = "sh",

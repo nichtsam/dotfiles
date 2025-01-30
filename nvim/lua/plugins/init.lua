@@ -87,6 +87,13 @@ local plugins = {
   },
 
   {
+    "davidmh/mdx.nvim",
+    config = true,
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    lazy = false,
+  },
+
+  {
     "stevearc/conform.nvim",
     --  for users those who want auto-save conform + lazyloading!
     event = "BufWritePre",

@@ -22,7 +22,7 @@ local options = {
     jsonc = { "prettier", "biome", stop_after_first = true },
     yaml = { "prettier" },
     markdown = { "prettier" },
-    ["markdown.mdx"] = { "prettier" },
+    mdx = { "prettier" },
     graphql = { "prettier", "biome", stop_after_first = true },
     handlebars = { "prettier" },
 
