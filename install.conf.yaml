@@ -5,16 +5,24 @@
 
 - clean: ["~"]
 
+- create:
+    ~/.gnupg/:
+      mode: 0700
+
 - link:
     ~/.gitconfig:
     ~/.zshenv:
     ~/.zshrc:
+    ~/.zlogin:
     ~/.npmrc:
     ~/.ssh/config: ssh/config
     ~/.config/nvim:
     ~/.config/starship.toml:
     ~/.config/wezterm/wezterm.lua:
     ~/.amethyst.yml:
+    ~/.gnupg/:
+      glob: true
+      path: gnupg/*
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

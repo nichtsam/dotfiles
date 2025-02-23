@@ -5,6 +5,11 @@
   editor = "nvim"
 [init]
 	defaultBranch = main
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+
 
 [include]
         path = ~/.gitconfig_local
