@@ -28,15 +28,18 @@ local servers = {
   -- Lua
   lua_ls = {},
   -- Dart
-  dartls = {
-    cmd = { "fvm", "dart", "language-server", "--protocol=lsp" },
-  },
+  dartls = {},
 }
 
 for name, opts in pairs(servers) do
   opts.on_init = nvlsp.on_init
   opts.on_attach = nvlsp.on_attach
   opts.capabilities = nvlsp.capabilities
+
+  if name == "dartls" then
+    require("flutter-tools").setup { lsp = opts }
+    return
+  end
 
   require("lspconfig")[name].setup(opts)
 end

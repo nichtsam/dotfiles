@@ -81,27 +81,34 @@ local plugins = {
   },
 
   {
+    "nvim-flutter/flutter-tools.nvim",
+    event = "User FilePost",
+    config = true,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "stevearc/dressing.nvim",
+    },
+  },
+
+  {
     "antosha417/nvim-lsp-file-operations",
+    config = true,
     event = "User FilePost",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-tree.lua",
     },
-    config = function()
-      require("lsp-file-operations").setup()
-    end,
   },
 
   {
     "davidmh/mdx.nvim",
+    lazy = false,
     config = true,
     dependencies = { "nvim-treesitter/nvim-treesitter" },
-    lazy = false,
   },
 
   {
     "stevearc/conform.nvim",
-    --  for users those who want auto-save conform + lazyloading!
     event = "BufWritePre",
     config = function()
       require "configs.conform"

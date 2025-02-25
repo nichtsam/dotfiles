@@ -26,6 +26,7 @@ path=(
 path=(
   "$(go env GOPATH)/bin"
   "$HOME/fvm/default/bin"
+  "$HOME/.pub-cache/bin"
   $path
 )
 
