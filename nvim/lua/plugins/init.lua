@@ -82,11 +82,8 @@ local plugins = {
 
   {
     "nvim-flutter/flutter-tools.nvim",
-    event = "User FilePost",
-    config = true,
     dependencies = {
       "nvim-lua/plenary.nvim",
-      "stevearc/dressing.nvim",
     },
   },
 
@@ -105,6 +102,16 @@ local plugins = {
     lazy = false,
     config = true,
     dependencies = { "nvim-treesitter/nvim-treesitter" },
+  },
+
+  {
+    "folke/snacks.nvim",
+    event = "VeryLazy",
+    opts = {
+      input = { enabled = true },
+      image = { enabled = true },
+      picker = { enabled = true },
+    },
   },
 
   {
