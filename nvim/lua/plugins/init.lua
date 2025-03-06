@@ -108,7 +108,6 @@ local plugins = {
     "folke/snacks.nvim",
     event = "VeryLazy",
     opts = {
-      input = { enabled = true },
       image = { enabled = true },
       picker = { enabled = true },
     },
