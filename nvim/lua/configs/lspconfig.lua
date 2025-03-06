@@ -38,8 +38,10 @@ for name, opts in pairs(servers) do
 
   if name == "dartls" then
     require("flutter-tools").setup { lsp = opts }
-    return
+    goto continue
   end
 
   require("lspconfig")[name].setup(opts)
+
+  ::continue::
 end
