@@ -3,6 +3,9 @@ export LANG=en_US.UTF-8
 export DOTFILES="$HOME/.dotfiles"
 export HOMEBREW_BUNDLE_FILE="$DOTFILES/Brewfile"
 
+# Auto-Completion
+autoload -U compinit; compinit
+
 # Alias
 alias ls='lsd -lg'
 alias tree='lsd --tree'
