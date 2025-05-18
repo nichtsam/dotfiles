@@ -41,7 +41,8 @@ for name, opts in pairs(servers) do
     goto continue
   end
 
-  require("lspconfig")[name].setup(opts)
+  vim.lsp.enable(name)
+  vim.lsp.config(name, opts)
 
   ::continue::
 end
