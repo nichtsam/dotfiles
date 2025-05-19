@@ -19,6 +19,8 @@ local servers = {
     },
   },
   ts_ls = {},
+  -- Web3
+  solidity = {},
   -- Rust
   rust_analyzer = {},
   taplo = {},

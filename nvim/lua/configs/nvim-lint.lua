@@ -29,6 +29,7 @@ local biome = {
 
 require("lint").linters_by_ft = merge(eslint, {
   go = { "golangcilint" },
+  solidity = { "solhint" },
 })
 
 local group = vim.api.nvim_create_augroup("Lint", { clear = true })

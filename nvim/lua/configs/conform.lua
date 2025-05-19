@@ -26,6 +26,8 @@ local options = {
     graphql = { "biome", "prettier", stop_after_first = true },
     handlebars = { "prettier" },
 
+    solidity = { "forge_fmt" },
+
     rust = { "rustfmt" },
 
     go = {

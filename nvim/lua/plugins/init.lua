@@ -16,6 +16,9 @@ local plugins = {
         "tsx",
         "json",
 
+        -- web3
+        "solidity",
+
         -- rust
         "rust",
         "toml",
@@ -32,7 +35,7 @@ local plugins = {
   },
 
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         -- Web
@@ -46,6 +49,12 @@ local plugins = {
         -- linter
         "eslint-lsp",
         "biome",
+
+        -- Web3
+        -- lsp
+        "solidity-ls",
+        -- linter
+        "solhint",
 
         -- Rust
         -- lsp
