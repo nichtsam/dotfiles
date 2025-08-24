@@ -3,6 +3,7 @@
 	email = 44519206+nichtsam@users.noreply.github.com
 [core]
   editor = "nvim"
+  ignorecase = false
 [init]
 	defaultBranch = main
 [commit]
