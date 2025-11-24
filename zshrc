@@ -13,13 +13,9 @@ alias trail='cat -n <<<${(F)path}'
 alias bbd='brew bundle dump --force --describe'
 source "$DOTFILES/zsh/alias/git.zsh"
 
-alias flutter="fvm flutter"
-alias dart="fvm dart"
-
 # Handle PATH
 typeset -U path
 path=(
-  "$HOME/.cargo/bin"
   "/opt/homebrew/bin"
   "/opt/homebrew/sbin"
   $path
@@ -27,13 +23,11 @@ path=(
 
 ## PATH setting that uses homebrew-installed packages
 path=(
-  "$(go env GOPATH)/bin"
-  "$HOME/fvm/default/bin"
-  "$HOME/.pub-cache/bin"
   $path
 )
 
-eval "$(fnm env --use-on-cd)"
+# Mise Runtimes Paths
+eval "$(mise activate zsh)"
 
 # Setup Starship
 eval "$(starship init zsh)"

@@ -1,5 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "leoafarias/fvm"
 tap "oven-sh/bun"
 tap "wez/wezterm"
@@ -9,16 +7,12 @@ brew "cocoapods"
 brew "fd"
 # Command-line tools for fly.io services
 brew "flyctl"
-# Fast and simple Node.js version manager
-brew "fnm"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
 brew "git"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
 # Command-line benchmarking tool
 brew "hyperfine"
 # Lightweight and flexible command-line JSON processor
@@ -29,6 +23,8 @@ brew "lazygit"
 brew "lsd"
 # Mac App Store command-line interface
 brew "mas"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -45,10 +41,6 @@ brew "tailwindcss"
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Simple cli to manage Flutter SDK versions per project
-brew "leoafarias/fvm/fvm"
-# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
-brew "oven-sh/bun/bun"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
 # Replacement for Docker Desktop

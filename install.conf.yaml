@@ -16,9 +16,12 @@
     ~/.zlogin:
     ~/.npmrc:
     ~/.ssh/config: ssh/config
+
     ~/.config/nvim:
     ~/.config/starship.toml:
     ~/.config/wezterm/wezterm.lua:
+    ~/.config/mise/config.toml: mise/config.toml
+
     ~/.amethyst.yml:
     ~/.gnupg/:
       glob: true
@@ -33,6 +36,6 @@
     - command: ./setup_zsh.zsh
       stdout: true
       stderr: true
-    - command: ./setup_rust.zsh
+    - command: mise trust && mise install
       stdout: true
       stderr: true

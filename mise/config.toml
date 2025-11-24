@@ -1,0 +1,7 @@
+[tools]
+node = "24"
+rust = "1.91.1"
+go = "1.25.4"
+
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
