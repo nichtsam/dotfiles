@@ -3,8 +3,16 @@ export LANG=en_US.UTF-8
 export DOTFILES="$HOME/.dotfiles"
 export HOMEBREW_BUNDLE_FILE="$DOTFILES/Brewfile"
 
-# Auto-Completion
-autoload -U compinit; compinit
+# Enable Auto-Completion
+autoload -Uz compinit
+today=$(date +'%j')
+compdump_day=$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)
+if [ "$compdump_day" != "$today" ]; then
+  rm -f ~/.zcompdump # don't know why compinit isn't updating this
+  compinit
+else
+  compinit -C
+fi
 
 # Alias
 alias ls='lsd -lg'
@@ -18,11 +26,6 @@ typeset -U path
 path=(
   "/opt/homebrew/bin"
   "/opt/homebrew/sbin"
-  $path
-)
-
-## PATH setting that uses homebrew-installed packages
-path=(
   $path
 )
 
