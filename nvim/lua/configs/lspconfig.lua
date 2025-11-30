@@ -27,6 +27,9 @@ local servers = {
   -- Go
   gopls = {},
   templ = {},
+  -- Python
+  pyright = {},
+  ruff = {},
   -- Lua
   lua_ls = {},
   -- Dart

@@ -27,6 +27,9 @@ local plugins = {
         "go",
         "templ",
 
+        -- python
+        "python",
+
         -- markdown
         "markdown",
         "markdown_inline",
@@ -71,6 +74,10 @@ local plugins = {
         "golines",
         -- linter
         "golangci-lint",
+
+        -- Python
+        "pyright",
+        "ruff",
 
         -- Lua
         -- lsp
