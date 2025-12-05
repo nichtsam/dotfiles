@@ -96,12 +96,6 @@ local plugins = {
     end,
   },
 
-  {
-    "nvim-flutter/flutter-tools.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
-  },
 
   {
     "antosha417/nvim-lsp-file-operations",

@@ -50,8 +50,6 @@ local options = {
     },
 
     lua = { "stylua" },
-
-    dart = { "dart_format" },
   },
 
   format_on_save = function(bufnr)

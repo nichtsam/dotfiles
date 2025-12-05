@@ -32,8 +32,6 @@ local servers = {
   ruff = {},
   -- Lua
   lua_ls = {},
-  -- Dart
-  dartls = {},
 }
 
 for name, opts in pairs(servers) do
@@ -41,13 +39,6 @@ for name, opts in pairs(servers) do
   opts.on_attach = nvlsp.on_attach
   opts.capabilities = nvlsp.capabilities
 
-  if name == "dartls" then
-    require("flutter-tools").setup { lsp = opts }
-    goto continue
-  end
-
   vim.lsp.enable(name)
   vim.lsp.config(name, opts)
-
-  ::continue::
 end
