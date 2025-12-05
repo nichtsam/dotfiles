@@ -15,6 +15,7 @@ local plugins = {
         "typescript",
         "tsx",
         "json",
+        "yaml",
 
         -- web3
         "solidity",
@@ -47,6 +48,8 @@ local plugins = {
         "css-lsp",
         "typescript-language-server",
         "tailwindcss-language-server",
+        "json-lsp",
+        "yaml-language-server",
         -- formatter
         "prettier",
         -- linter
@@ -96,6 +99,7 @@ local plugins = {
     end,
   },
 
+  { "b0o/schemastore.nvim" },
 
   {
     "antosha417/nvim-lsp-file-operations",
