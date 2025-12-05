@@ -87,6 +87,9 @@ local plugins = {
         "lua",
         -- formatter
         "stylua",
+
+        -- Open API
+        "vacuum",
       },
     },
   },

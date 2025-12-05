@@ -1,3 +1,5 @@
+local nvlint = require "lint"
+
 -- temp solution for switching linters between projects
 local function merge(...)
   local result = {}
@@ -27,15 +29,17 @@ local biome = {
   typescriptreact = { "biomejs" },
 }
 
-require("lint").linters_by_ft = merge(eslint, {
+nvlint.linters_by_ft = merge(eslint, {
   go = { "golangcilint" },
   solidity = { "solhint" },
+  yaml = { "vacuum" },
+  json = { "vacuum" },
 })
 
 local group = vim.api.nvim_create_augroup("Lint", { clear = true })
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   group = group,
   callback = function()
-    require("lint").try_lint(nil, { ignore_errors = true })
+    nvlint.try_lint(nil, { ignore_errors = true })
   end,
 })
