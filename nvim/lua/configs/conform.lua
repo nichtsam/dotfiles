@@ -8,6 +8,9 @@ local options = {
   },
 
   formatters_by_ft = {
+    sh = { "shfmt" },
+    bash = { "shfmt" },
+    zsh = { "shfmt" },
 
     javascript = { "biome", "prettier", stop_after_first = true },
     javascriptreact = { "biome", "prettier", stop_after_first = true },

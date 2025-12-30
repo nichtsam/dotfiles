@@ -8,6 +8,9 @@ local plugins = {
         "vimdoc",
         "lua",
 
+        -- shell
+        "bash",
+
         -- web dev
         "html",
         "css",
@@ -42,6 +45,9 @@ local plugins = {
     "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
+        -- Shell
+        "shfmt",
+
         -- Web
         -- lsp
         "html-lsp",
