@@ -11,6 +11,7 @@
 
 - link:
     ~/.gitconfig:
+    ~/.gitignore_global:
     ~/.zshenv:
     ~/.zshrc:
     ~/.zlogin:

@@ -1,0 +1,4 @@
+# To gitignore something globally in all repos
+
+.DS_Store
+.wakatime-project

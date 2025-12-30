@@ -4,6 +4,7 @@
 [core]
   editor = "nvim"
   ignorecase = false
+  excludesfile = ~/.gitignore_global
 [init]
 	defaultBranch = main
 [commit]
