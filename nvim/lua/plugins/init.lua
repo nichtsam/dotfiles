@@ -122,8 +122,7 @@ local plugins = {
 
   {
     "davidmh/mdx.nvim",
-    lazy = false,
-    config = true,
+    event = "BufEnter *.mdx",
     dependencies = { "nvim-treesitter/nvim-treesitter" },
   },
 
