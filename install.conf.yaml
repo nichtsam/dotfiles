@@ -15,7 +15,6 @@
     ~/.zshrc:
     ~/.zlogin:
     ~/.npmrc:
-    ~/.ssh/config: ssh/config
 
     ~/.config/nvim:
     ~/.config/starship.toml:
@@ -30,12 +29,15 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
-    - command: ./setup_homebrew.zsh
+    - command: ./setups/homebrew.zsh
       stdout: true
       stderr: true
-    - command: ./setup_zsh.zsh
+    - command: ./setups/zsh.zsh
       stdout: true
       stderr: true
     - command: mise trust && mise install
+      stdout: true
+      stderr: true
+    - command: ./setups/ssh.zsh
       stdout: true
       stderr: true
