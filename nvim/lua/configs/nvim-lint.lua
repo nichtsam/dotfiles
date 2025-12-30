@@ -32,6 +32,7 @@ local biome = {
 nvlint.linters_by_ft = merge(eslint, {
   go = { "golangcilint" },
   solidity = { "solhint" },
+  python = { "ruff" },
   yaml = { "vacuum" },
   json = { "vacuum" },
 })
