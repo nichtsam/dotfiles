@@ -21,6 +21,7 @@
     ~/.config/starship.toml:
     ~/.config/wezterm/wezterm.lua:
     ~/.config/mise/config.toml: mise/config.toml
+    ~/.config/lazygit/config.yml: lazygit.yaml
 
     ~/.amethyst.yml:
     ~/.gnupg/:

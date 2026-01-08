@@ -2,6 +2,7 @@
 export LANG=en_US.UTF-8
 export DOTFILES="$HOME/.dotfiles"
 export HOMEBREW_BUNDLE_FILE="$DOTFILES/Brewfile"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # Enable Auto-Completion
 autoload -Uz compinit
