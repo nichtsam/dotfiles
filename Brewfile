@@ -1,6 +1,11 @@
+tap "hashicorp/tap"
 tap "leoafarias/fvm"
 tap "oven-sh/bun"
 tap "wez/wezterm"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
 # Simple, fast and user-friendly alternative to find
@@ -11,7 +16,7 @@ brew "flyctl"
 brew "gh"
 # Distributed revision control system
 brew "git"
-# GNU Pretty Good Privacy (PGP) package
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Command-line benchmarking tool
 brew "hyperfine"
@@ -41,6 +46,8 @@ brew "tailwindcss"
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Terraform
+brew "hashicorp/tap/terraform"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
 # Replacement for Docker Desktop
@@ -48,3 +55,5 @@ cask "orbstack"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 mas "Xcode", id: 497799835
+go "cmd/go"
+go "cmd/gofmt"
