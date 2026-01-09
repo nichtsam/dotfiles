@@ -54,6 +54,8 @@ local servers = {
   ruff = {},
   -- Lua
   lua_ls = {},
+  -- Terraform
+  terraformls = {},
 }
 
 for name, opts in pairs(servers) do

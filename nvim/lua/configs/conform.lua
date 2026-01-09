@@ -53,6 +53,8 @@ local options = {
     },
 
     lua = { "stylua" },
+
+    terraform = { "terraform_fmt" },
   },
 
   format_on_save = function(bufnr)
