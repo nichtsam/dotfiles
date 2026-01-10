@@ -31,14 +31,26 @@ path=(
 )
 
 # Mise Runtimes Paths
-eval "$(mise activate zsh)"
+if exists mise; then
+  eval "$(mise activate zsh)"
+else
+  echo "⚠️ Starship not found, prompt not initialized"
+fi
 
 # Setup Starship
-eval "$(starship init zsh)"
+if exists starship; then
+  eval "$(starship init zsh)"
+else
+  echo "⚠️ Mise not found, runtime paths not activated"
+fi
 
 # Plugins
 source "$DOTFILES/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # Terraform Auto Completions
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
+if exists terraform; then
+  complete -o nospace -C "$(command -v terraform)" terraform
+else
+  echo "⚠️ Terraform not found, completions disabled"
+fi
