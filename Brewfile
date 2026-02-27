@@ -1,5 +1,6 @@
 tap "hashicorp/tap"
 tap "leoafarias/fvm"
+tap "nikitabobko/tap"
 tap "oven-sh/bun"
 tap "wez/wezterm"
 # Official Amazon AWS command-line interface
@@ -48,8 +49,8 @@ brew "wget"
 brew "zsh"
 # Terraform
 brew "hashicorp/tap/terraform"
-# Automatic tiling window manager similar to xmonad
-cask "amethyst"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace"
 # Replacement for Docker Desktop
 cask "orbstack"
 # GPU-accelerated cross-platform terminal emulator and multiplexer

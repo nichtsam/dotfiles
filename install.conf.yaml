@@ -19,10 +19,10 @@
       glob: true
       path: gnupg/*
 
+    ~/.aerospace.toml:
     ~/.config/nvim:
     ~/.config/starship.toml:
     ~/.config/wezterm/wezterm.lua:
-    ~/.config/amethyst/amethyst.yml:
     ~/.config/mise/config.toml: mise/config.toml
     ~/.config/lazygit/config.yml: lazygit.yaml
 
