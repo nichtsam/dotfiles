@@ -30,18 +30,16 @@ path=(
   $path
 )
 
-# Mise Runtimes Paths
 if exists mise; then
   eval "$(mise activate zsh)"
 else
-  echo "⚠️ Starship not found, prompt not initialized"
+  echo "⚠️ Mise not found, tools' runtime paths not activated"
 fi
 
-# Setup Starship
 if exists starship; then
   eval "$(starship init zsh)"
 else
-  echo "⚠️ Mise not found, runtime paths not activated"
+  echo "⚠️ Starship not found, prompt not initialized"
 fi
 
 # Plugins
