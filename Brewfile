@@ -13,6 +13,8 @@ brew "cocoapods"
 brew "fd"
 # Command-line tools for fly.io services
 brew "flyctl"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -45,6 +47,8 @@ brew "starship"
 brew "tailwindcss"
 # Internet file retriever
 brew "wget"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Terraform

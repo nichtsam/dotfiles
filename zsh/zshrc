@@ -42,6 +42,12 @@ else
   echo "⚠️ Starship not found, prompt not initialized"
 fi
 
+if exists zoxide; then
+  eval "$(zoxide init --cmd cd zsh)"
+else
+  echo "⚠️ Zoxide not found, smart cd not initialized"
+fi
+
 # Plugins
 source "$DOTFILES/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
