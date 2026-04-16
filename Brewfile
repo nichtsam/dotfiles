@@ -59,6 +59,8 @@ brew "hashicorp/tap/terraform"
 cask "nikitabobko/tap/aerospace"
 # Replacement for Docker Desktop
 cask "orbstack"
+# Control your tools with a few keystrokes
+cask "raycast"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 mas "Xcode", id: 497799835
