@@ -35,8 +35,6 @@ brew "mas"
 brew "mise"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
-# Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Search tool like grep and The Silver Searcher
@@ -45,6 +43,10 @@ brew "ripgrep"
 brew "starship"
 # Utility-first CSS framework
 brew "tailwindcss"
+# Incremental parsing library
+brew "tree-sitter"
+# Parser generator tool
+brew "tree-sitter-cli"
 # Internet file retriever
 brew "wget"
 # Shell extension to navigate your filesystem faster

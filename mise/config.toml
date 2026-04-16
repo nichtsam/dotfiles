@@ -4,6 +4,7 @@ rust = "1.91.1"
 go = "1.25.4"
 python = "latest"
 uv = "latest"
+neovim = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
