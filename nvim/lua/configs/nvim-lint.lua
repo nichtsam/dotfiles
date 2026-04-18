@@ -15,8 +15,8 @@ nvlint.linters_by_ft = {
   go = { "golangcilint" },
   solidity = { "solhint" },
   python = { "ruff" },
-  yaml = { "vacuum" },
-  json = { "vacuum" },
+  -- yaml = { "vacuum" },
+  -- json = { "vacuum" },
 }
 
 local group = vim.api.nvim_create_augroup("Lint", { clear = true })
