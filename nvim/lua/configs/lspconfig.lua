@@ -66,3 +66,9 @@ for name, opts in pairs(servers) do
   vim.lsp.config(name, opts)
   vim.lsp.enable(name)
 end
+
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function()
+    vim.lsp.document_color.enable(false)
+  end,
+})
