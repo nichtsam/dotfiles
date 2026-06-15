@@ -1,8 +1,6 @@
-tap "hashicorp/tap"
-tap "leoafarias/fvm"
-tap "nikitabobko/tap"
-tap "oven-sh/bun"
-tap "wez/wezterm"
+tap "hashicorp/tap", trusted: true
+tap "nikitabobko/tap", trusted: true
+tap "wez/wezterm", trusted: true
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -66,3 +64,4 @@ cask "wezterm"
 mas "Xcode", id: 497799835
 go "cmd/go"
 go "cmd/gofmt"
+npm "corepack"
