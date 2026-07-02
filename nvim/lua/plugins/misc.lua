@@ -12,9 +12,7 @@ return {
   },
 
   {
-    "folke/ts-comments.nvim",
-    opts = {},
-    event = "VeryLazy",
+    "numToStr/Comment.nvim",
   },
 
   { "wakatime/vim-wakatime", lazy = false, enabled = false },
