@@ -22,6 +22,9 @@ return {
       "json",
       "yaml",
 
+      -- Database
+      "sql",
+
       -- web3
       "solidity",
 
