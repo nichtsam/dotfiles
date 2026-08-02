@@ -2,3 +2,5 @@
 
 .DS_Store
 .wakatime-project
+
+**/.claude/settings.local.json
