@@ -57,6 +57,7 @@
   },
   "theme": "dark-daltonized",
   "voiceEnabled": true,
+  "includeCoAuthoredBy": false,
   "statusLine": {
     "type": "command",
     "command": "python3 ~/.claude/context-token-statusline.py"
