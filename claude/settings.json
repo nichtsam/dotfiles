@@ -6,11 +6,8 @@
     "code-simplifier@claude-plugins-official": true,
     "playwright@claude-plugins-official": true,
     "claude-md-management@claude-plugins-official": true,
-    "cloudflare@cloudflare": true,
-    "stripe@claude-plugins-official": true,
-    "github@claude-plugins-official": true,
-    "mattpocock-skills@mattpocock": true,
-    "marketing-skills@marketingskills": true
+
+    "mattpocock-skills@mattpocock": true
   },
   "extraKnownMarketplaces": {
     "caveman": {
@@ -31,22 +28,11 @@
         "repo": "anthropics/skills"
       }
     },
-    "cloudflare": {
-      "source": {
-        "source": "github",
-        "repo": "cloudflare/skills"
-      }
-    },
+
     "mattpocock": {
       "source": {
         "source": "github",
         "repo": "mattpocock/skills"
-      }
-    },
-    "marketingskills": {
-      "source": {
-        "source": "github",
-        "repo": "coreyhaines31/marketingskills"
       }
     }
   },
