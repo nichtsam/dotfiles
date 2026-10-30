@@ -9,8 +9,9 @@
 Starting a new chain of actions needs my explicit agreement. Steps inside a chain I already
 approved don't.
 
-- Non-trivial work: run the quality guardrails (checks, lint, format), then state which
-  intentions the change fulfils. STOP. Commit on approval.
+- Non-trivial work: run the quality guardrails (checks, lint, format), then report the
+  change in three parts — what prompted it, what it changed, and how that answers the
+  original need. STOP. Commit on approval.
 
 ## Commit messages
 
