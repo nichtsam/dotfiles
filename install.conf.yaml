@@ -31,6 +31,8 @@
     ~/.claude/settings.json: claude/settings.json
     ~/.claude/context-token-statusline.py: claude/context-token-statusline.py
 
+    ~/.claude/CLAUDE.md: agents/AGENTS.md
+
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
