@@ -16,4 +16,5 @@ approved don't.
 ## Commit messages
 
 - English only, even when the diff is zh locale copy.
-- If the diff doesn't make the intention legible, propose a body and ask before committing.
+- Propose the message, body included, as part of the pre-commit stop. Write a body when
+  the diff alone doesn't carry the intention.
