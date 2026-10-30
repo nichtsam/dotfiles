@@ -64,4 +64,3 @@ cask "wezterm"
 mas "Xcode", id: 497799835
 go "cmd/go"
 go "cmd/gofmt"
-npm "corepack"
