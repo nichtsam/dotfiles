@@ -1,12 +1,13 @@
 {
+  "includeCoAuthoredBy": false,
+  "model": "opus",
+  "statusLine": {
+    "type": "command",
+    "command": "python3 ~/.claude/context-token-statusline.py"
+  },
   "enabledPlugins": {
-    "caveman@caveman": true,
-    "ponytail@ponytail": true,
     "frontend-design@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true,
     "playwright@claude-plugins-official": true,
-    "claude-md-management@claude-plugins-official": true,
-
     "mattpocock-skills@mattpocock": true
   },
   "extraKnownMarketplaces": {
@@ -16,19 +17,12 @@
         "repo": "JuliusBrussee/caveman"
       }
     },
-    "ponytail": {
-      "source": {
-        "source": "github",
-        "repo": "DietrichGebert/ponytail"
-      }
-    },
     "anthropic-agent-skills": {
       "source": {
         "source": "github",
         "repo": "anthropics/skills"
       }
     },
-
     "mattpocock": {
       "source": {
         "source": "github",
@@ -37,15 +31,12 @@
     }
   },
   "language": "Traditional Chinese (Taiwan)",
+  "effortLevel": "high",
+  "outputStyle": "Concise",
   "voice": {
     "enabled": true,
     "mode": "hold"
   },
   "theme": "dark-daltonized",
-  "voiceEnabled": true,
-  "includeCoAuthoredBy": false,
-  "statusLine": {
-    "type": "command",
-    "command": "python3 ~/.claude/context-token-statusline.py"
-  }
+  "voiceEnabled": true
 }
