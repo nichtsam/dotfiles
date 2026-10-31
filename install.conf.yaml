@@ -32,6 +32,8 @@
     ~/.claude/context-token-statusline.py: claude/context-token-statusline.py
 
     ~/.claude/CLAUDE.md: agents/AGENTS.md
+    ~/.claude/skills/fastapi-dependency-injection: claude/skills/fastapi-dependency-injection
+    ~/.claude/skills/fastapi-async-boundaries: claude/skills/fastapi-async-boundaries
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
