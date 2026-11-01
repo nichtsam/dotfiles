@@ -1,6 +1,5 @@
 {
   "includeCoAuthoredBy": false,
-  "model": "opus",
   "statusLine": {
     "type": "command",
     "command": "python3 ~/.claude/context-token-statusline.py"
@@ -30,13 +29,18 @@
       }
     }
   },
-  "language": "Traditional Chinese (Taiwan)",
-  "effortLevel": "high",
   "outputStyle": "Concise",
+  "language": "繁體中文 Traditional Chinese (Taiwan)",
+  "effortLevel": "high",
   "voice": {
     "enabled": true,
     "mode": "hold"
   },
   "theme": "dark-daltonized",
-  "voiceEnabled": true
+  "voiceEnabled": true,
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "xhigh"
+    }
+  }
 }
